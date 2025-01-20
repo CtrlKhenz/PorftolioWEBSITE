@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    color: #00FF00; /* Neon green text */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+.header {
+    background-color: #000; /* Dark background */
+    color: #00FF00; /* Neon green text */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px 2px #00FF00; /* Green glow around header */
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #00FF00; /* Neon green links */
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00; /* Neon glow effect on links */
+    transition: text-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.nav-list a:hover {
+    text-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00, 0 0 35px #00FF00; /* Bright glow on hover */
+    transform: scale(1.1); /* Slightly enlarge the text on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    height: 100vh; /* Makes sure each section takes full screen height */
+    color: #00FF00; /* Neon green text */
+}
+
+#about {
+    background-color: #111; /* Dark background for about section */
+}
+
+#projects {
+    background-color: #111; /* Dark background for projects section */
+}
+
+#skills {
+    background-color: #111; /* Dark background for skills section */
+}
+
+#contact {
+    background-color: #111; /* Dark background for contact section */
+}
+
+/* Parallax Effect */
+.about, .projects, .skills, .contact {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    background-image: url('tech.gif');
+}
+
+.projects {
+    background-image: url('https://example.com/your-image.jpg');
+}
+
+.skills {
+    background-image: url('https://example.com/your-image.jpg');
+}
+
+.contact {
+    background-image: url('https://example.com/your-image.jpg');
+}
+
+/* Footer Section */
+footer.footer {
+    background-color: #000;
+    color: #00FF00;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px 2px #00FF00;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Content Styling */
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Glow Effect for Text */
+.glow-text {
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+}
+
+/* Hover Effect for Links and Buttons */
+button, .nav-list a {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+button:hover, .nav-list a:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    text-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00, 0 0 35px #00FF00; /* Stronger glow on hover */
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
