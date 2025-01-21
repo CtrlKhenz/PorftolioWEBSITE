@@ -10,11 +10,11 @@ body {
 
 /* Header Section */
 .header {
-    background-color: #000; /* Dark background */
-    color: #00FF00; /* Neon green text */
+    background-color: #000;
+    color: #00FF00;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 0 10px 2px #00FF00; /* Green glow around header */
+    box-shadow: 0 0 15px 2px #00FF00;
 }
 
 .nav-list {
@@ -28,63 +28,120 @@ body {
 }
 
 .nav-list a {
-    color: #00FF00; /* Neon green links */
+    color: #00FF00;
     text-decoration: none;
-    font-size: 18px;
-    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00; /* Neon glow effect on links */
-    transition: text-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .nav-list a:hover {
-    text-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00, 0 0 35px #00FF00; /* Bright glow on hover */
-    transform: scale(1.1); /* Slightly enlarge the text on hover */
+    text-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00, 0 0 35px #00FF00;
+    transform: scale(1.1);
 }
 
 /* Section Styling */
 section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
-    height: 100vh; /* Makes sure each section takes full screen height */
-    color: #00FF00; /* Neon green text */
+    min-height: 100vh;
+    color: #00FF00;
 }
 
-#about {
-    background-color: #111; /* Dark background for about section */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-#projects {
-    background-color: #111; /* Dark background for projects section */
-}
-
-#skills {
-    background-color: #111; /* Dark background for skills section */
-}
-
-#contact {
-    background-color: #111; /* Dark background for contact section */
-}
-
-/* Parallax Effect */
+/* Section Backgrounds */
 .about, .projects, .skills, .contact {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-color: #111;
 }
 
 .about {
-    background-image: url('tech.gif');
+    background-image: url('star-wars.gif');
 }
 
-.projects {
-    background-image: url('https://example.com/your-image.jpg');
+.projects, .skills, .contact {
+    background-image: url('tech.gif'); /* Replace with valid URLs */
 }
 
-.skills {
-    background-image: url('https://example.com/your-image.jpg');
+/* Glow Text Animation */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    }
+    50% {
+        text-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 50px #00FF00;
+    }
+    100% {
+        text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    }
 }
 
-.contact {
-    background-image: url('https://example.com/your-image.jpg');
+.glow-text, .Glowtitle {
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.6;
+    animation: glowing 2s infinite;
+}
+
+/* Typewriter Effect */
+.typewriter {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #00FF00;
+    border-right: 2px solid #00FF00; /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(40, end), blink-cursor 0.6s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Full width of the text */
+    }
+}
+
+@keyframes blink-cursor {
+    from {
+        border-right-color: #00FF00;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Buttons */
+button {
+    background-color: #111;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #00FF00;
+    color: #000;
+    box-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00;
 }
 
 /* Footer Section */
@@ -101,39 +158,174 @@ footer.footer {
     margin: 0 auto;
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
+.footer-icons {
+    margin-top: 15px;
 }
 
-/* Section Content Styling */
-.section-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Glow Effect for Text */
-.glow-text {
-    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
-}
-
-/* Hover Effect for Links and Buttons */
-button, .nav-list a {
+.footer-icons a {
+    color: #00FF00;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-button:hover, .nav-list a:hover {
-    transform: scale(1.1); /* Enlarge on hover */
-    text-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00, 0 0 35px #00FF00; /* Stronger glow on hover */
+.footer-icons a:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00;
 }
 
-/* List Styling */
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Skill Bars */
+.skill-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-ul li {
-    margin: 5px 0;
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-title {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+    color: #00FF00;
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px #00FF00;
+}
+
+.skill-bar {
+    flex: 3;
+    background-color: #00FF00;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    box-shadow: 0 0 5px #00FF00;
+}
+
+.skill-progress {
+    background-color: violet;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00;
+    transition: width 2s ease-in-out;
+}
+
+.skill-progress::after {
+    content: attr(data-skill);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Divider Styling */
+.divider {
+    height: 2px;
+    background: linear-gradient(to right, #00FF00, transparent, #00FF00);
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 0 15px #00FF00, 0 0 25px #00FF00;
+}
+
+/* Services Section */
+.services {
+    background-color: #000;
+    color: #00FF00;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px #00FF00;
+}
+
+.services-table th, .services-table td {
+    border: 1px solid #00FF00;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.services-table th {
+    background-color: #111;
+    text-shadow: 0 0 10px #00FF00;
+}
+
+.services-table td {
+    background-color: #222;
+}
+
+/* Services Form */
+.services-form {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #00FF00;
+    box-shadow: 0 0 15px #00FF00;
+}
+
+.services-form h3 {
+    text-shadow: 0 0 10px #00FF00;
+}
+
+.services-form input, 
+.services-form select, 
+.services-form textarea, 
+.services-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #00FF00;
+    background-color: #222;
+    border: 1px solid #00FF00;
+    box-shadow: 0 0 10px #00FF00;
+}
+
+.services-form button:hover {
+    transform: scale(1.1);
+    background-color: #00FF00;
+    color: #000;
+}
+
+
+/* Neon Breathing Effect */
+@keyframes neon-breathing {
+    0%, 100% {
+        text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00;
+        box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00;
+    }
+    50% {
+        text-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00;
+        box-shadow: 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 50px #00FF00, 0 0 60px #00FF00;
+    }
+}
+
+/* Apply Neon Breathing Effect */
+.header, 
+button, 
+.nav-list a:hover, 
+.glow-text, 
+.skill-bar, 
+.footer {
+    animation: neon-breathing 3s infinite;
+}
+
+/* Optional: Target Specific Elements */
+button:hover {
+    animation: neon-breathing 1.5s infinite;
 }

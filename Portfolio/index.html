@@ -4,69 +4,176 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Khenert Catayao - Portfolio</title>
 </head>
 <body>
     <!-- Header Section -->
     <header class="header">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Khenert Catayao</h1>
+        <h2>A Content Creator</h2>
         <nav>
             <ul class="nav-list">
-                <li>><a href="#about">About Me</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Divider -->
+    <div class="divider"></div>
+
     <!-- About Section -->
     <section id="about" class="about">
         <div class="section-content">
-            <h2>About Me</h2>
-            <p class="Glowtitle">Hi, I'm Khenert Catayao, a passionate developer and designer. I love creating beautiful and functional websites that help people and businesses grow.</p>
+            <h2 class="Glowtitle">About Me</h2>
+            <p class="typewriter">Hello! I’m Khenert Catayao, a content creator passionate about technology, innovation, and storytelling. Through my work, I strive to connect ideas and inspire action.</p>
         </div>
     </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="section-content">
             <h2>My Projects</h2>
-            <p>Here are some of the projects I’ve worked on:</p>
+            <p>Explore some of the exciting projects I’ve been a part of:</p>
             <ul>
-                <li>Project 1 - <a href="#">View Details</a></li>
-                <li>Project 2 - <a href="#">View Details</a></li>
-                <li>Project 3 - <a href="#">View Details</a></li>
+                <li>Content Strategy for Tech Brands - <a href="#">View Details</a></li>
+                <li>Video Editing Portfolio - <a href="#">View Details</a></li>
+                <li>Social Media Campaigns - <a href="#">View Details</a></li>
             </ul>
         </div>
     </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="section-content">
             <h2>My Skills</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>UI/UX Design</li>
-                <li>JavaScript, HTML, CSS</li>
-                <li>React, Node.js</li>
-            </ul>
+            <div class="skill-container">
+                <div class="skill">
+                    <span class="skill-title">Content Creation</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;" data-skill="85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-title">Video Editing</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;" data-skill="90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-title">Graphic Design</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;" data-skill="75%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-title">Social Media Strategy</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;" data-skill="80%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="section-content">
             <h2>Contact Me</h2>
-            <p>If you’d like to get in touch, feel free to email me at: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+            <p>Let’s work together! Reach out to discuss ideas, projects, or collaborations:</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-content">
+            <h2>My Services</h2>
+            <p>Here are the services I offer:</p>
+            <!-- Services Table -->
+            <table class="services-table">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="services[]" value="video-editing"></td>
+                        <td>Video Editing</td>
+                        <td>High-quality video editing for social media, YouTube, or professional projects.</td>
+                        <td>$50/hour</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="services[]" value="content-strategy"></td>
+                        <td>Content Strategy</td>
+                        <td>Developing tailored content strategies to engage your audience effectively.</td>
+                        <td>$100/session</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="services[]" value="graphic-design"></td>
+                        <td>Graphic Design</td>
+                        <td>Custom graphic designs for branding, marketing, and personal projects.</td>
+                        <td>$40/hour</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="services[]" value="social-media-management"></td>
+                        <td>Social Media Management</td>
+                        <td>Helping you build, manage, and grow your online presence.</td>
+                        <td>$150/month</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Services Inquiry Form -->
+            <form class="services-form">
+                <h3>Inquire About Services</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <fieldset>
+                    <legend>Select Services:</legend>
+                    <label><input type="checkbox" name="services[]" value="video-editing"> Video Editing</label><br>
+                    <label><input type="checkbox" name="services[]" value="content-strategy"> Content Strategy</label><br>
+                    <label><input type="checkbox" name="services[]" value="graphic-design"> Graphic Design</label><br>
+                    <label><input type="checkbox" name="services[]" value="social-media-management"> Social Media Management</label>
+                </fieldset>
+                <textarea name="details" placeholder="Tell me more about your requirements..." required></textarea>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
 
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-content">
             <h1>Thank You for Visiting!</h1>
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Khenert Catayao. All rights reserved.</p>
         </div>
     </footer>
 </body>
