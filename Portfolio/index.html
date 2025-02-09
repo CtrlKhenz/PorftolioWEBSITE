@@ -7,6 +7,7 @@
     <title>Khenert Catayao - Portfolio</title>
 </head>
 <body>
+
     <!-- Header Section -->
     <header class="header">
         <h1>Khenert Catayao</h1>
@@ -15,32 +16,31 @@
             <ul class="nav-list">
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#services">Services</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Divider -->
     <div class="divider"></div>
+    <div class="section-block"></div>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="section-content">
-            <h2 class="Glowtitle">About Me</h2>
-            <p class="typewriter">Hello! I’m Khenert Catayao, a content creator passionate about technology, innovation, and storytelling. Through my work, I strive to connect ideas and inspire action.</p>
+            <h2 class="glow-text">About Me</h2>
+            <p>Hello! I’m Khenert Catayao, a content creator passionate about technology, innovation, and storytelling. Through my work, I strive to connect ideas and inspire action.</p>
         </div>
     </section>
 
-    <!-- Divider -->
     <div class="divider"></div>
+    <div class="section-block"></div>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="section-content">
-            <h2>My Projects</h2>
-            <p>Explore some of the exciting projects I’ve been a part of:</p>
+            <h2 class="glow-text">My Projects</h2>
             <ul>
                 <li>Content Strategy for Tech Brands - <a href="#">View Details</a></li>
                 <li>Video Editing Portfolio - <a href="#">View Details</a></li>
@@ -49,13 +49,54 @@
         </div>
     </section>
 
-    <!-- Divider -->
     <div class="divider"></div>
+    <div class="section-block"></div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-content">
+            <h2 class="glow-text">My Services</h2>
+            <table class="services-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Video Editing</td>
+                        <td>Professional editing for YouTube, social media, and advertisements.</td>
+                        <td>Starts at $50</td>
+                    </tr>
+                    <tr>
+                        <td>Content Creation</td>
+                        <td>Engaging content for blogs, social media, and websites.</td>
+                        <td>Starts at $30</td>
+                    </tr>
+                    <tr>
+                        <td>Graphic Design</td>
+                        <td>Custom graphics, thumbnails, and promotional materials.</td>
+                        <td>Starts at $40</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media Strategy</td>
+                        <td>Growth strategies for brand awareness and engagement.</td>
+                        <td>Custom Pricing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    <div class="section-block"></div>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="section-content">
-            <h2>My Skills</h2>
+            <h2 class="glow-text">My Skills</h2>
             <div class="skill-container">
                 <div class="skill">
                     <span class="skill-title">Content Creation</span>
@@ -85,96 +126,30 @@
         </div>
     </section>
 
-    <!-- Divider -->
     <div class="divider"></div>
+    <div class="section-block"></div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="section-content">
-            <h2>Contact Me</h2>
-            <p>Let’s work together! Reach out to discuss ideas, projects, or collaborations:</p>
+            <h2 class="glow-text">Contact Me</h2>
             <form class="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
-            </form>
+            </form> 
         </div>
     </section>
 
-    <!-- Divider -->
     <div class="divider"></div>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="section-content">
-            <h2>My Services</h2>
-            <p>Here are the services I offer:</p>
-            <!-- Services Table -->
-            <table class="services-table">
-                <thead>
-                    <tr>
-                        <th>Select</th>
-                        <th>Service</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox" name="services[]" value="video-editing"></td>
-                        <td>Video Editing</td>
-                        <td>High-quality video editing for social media, YouTube, or professional projects.</td>
-                        <td>$50/hour</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="services[]" value="content-strategy"></td>
-                        <td>Content Strategy</td>
-                        <td>Developing tailored content strategies to engage your audience effectively.</td>
-                        <td>$100/session</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="services[]" value="graphic-design"></td>
-                        <td>Graphic Design</td>
-                        <td>Custom graphic designs for branding, marketing, and personal projects.</td>
-                        <td>$40/hour</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="services[]" value="social-media-management"></td>
-                        <td>Social Media Management</td>
-                        <td>Helping you build, manage, and grow your online presence.</td>
-                        <td>$150/month</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- Services Inquiry Form -->
-            <form class="services-form">
-                <h3>Inquire About Services</h3>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <fieldset>
-                    <legend>Select Services:</legend>
-                    <label><input type="checkbox" name="services[]" value="video-editing"> Video Editing</label><br>
-                    <label><input type="checkbox" name="services[]" value="content-strategy"> Content Strategy</label><br>
-                    <label><input type="checkbox" name="services[]" value="graphic-design"> Graphic Design</label><br>
-                    <label><input type="checkbox" name="services[]" value="social-media-management"> Social Media Management</label>
-                </fieldset>
-                <textarea name="details" placeholder="Tell me more about your requirements..." required></textarea>
-                <button type="submit">Submit Inquiry</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Divider -->
-    <div class="divider"></div>
+    <div class="section-block"></div>
 
     <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-content">
-            <h1>Thank You for Visiting!</h1>
-            <p>&copy; 2025 Khenert Catayao. All rights reserved.</p>
-        </div>
+    <footer>
+        <h1>Thank You for Visiting!</h1>
+        <p>&copy; 2025 Khenert Catayao. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
